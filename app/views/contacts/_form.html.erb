@@ -12,31 +12,33 @@
   <% end %>
 
   <div>
-    <%= form.label :firt_name, style: "display: block" %>
-    <%= form.text_field :firt_name %>
+  <br>
+    <br>
+    <%= form.text_field :firt_name, class: "form-control", placeholder: "First name" %>
   </div>
 
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+    <br>
+    <%= form.text_field :last_name, class: "form-control", placeholder: "Last name" %>
   </div>
 
   <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <br>
+    <%= form.text_field :email, class: "form-control", placeholder: "email@mail.com" %>
   </div>
 
   <div>
-    <%= form.label :instagram, style: "display: block" %>
-    <%= form.text_field :instagram %>
+    <br>
+    <%= form.text_field :instagram, class: "form-control", placeholder: "@Instagram" %>
   </div>
 
   <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+    <br>
+    <%= form.text_field :phone, class: "form-control", placeholder: "phone" %>
   </div>
 
   <div>
-    <%= form.submit %>
+  <br>
+    <%= form.submit class: 'btn btn-outline-success' %>
   </div>
 <% end %>
