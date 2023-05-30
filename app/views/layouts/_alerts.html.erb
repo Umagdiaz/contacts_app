@@ -1,0 +1,16 @@
+<% if notice == 'create' %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    Contact was successfully <strong>created.</strong>
+      </button>
+    </div>
+  <% elsif notice == 'destroy' %>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    Contact was successfully <strong>destroyed.</strong>
+      </button>
+    </div>
+  <% elsif notice == 'update' %>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+    Contact was successfully <strong>updated.</strong>
+    </div>
+  <% end %>
+  
