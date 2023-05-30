@@ -16,6 +16,7 @@
 
   <tbody>
   <% @contacts.each do |contact| %>
+    <% if contact.user == current_user %>
       <tr>
         <td><%= contact.firt_name + ' ' + contact.last_name %></td>
         <td><%= contact.email %></td>
@@ -24,6 +25,7 @@
         <td><%= link_to "Show", contact, class:"btn btn-outline-info d-grid gap-4 col-12 mx-auto" %></td>
         <td><%= link_to 'Delete', contact, 'data-turbo-method': :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger  d-grid gap-4 col-12 mx-auto " %></td>
       </tr>
+      <% end %>
     <% end %>
     
   <tbody>
