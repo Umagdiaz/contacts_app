@@ -1,0 +1,28 @@
+<div class="card" style="width: 30rem;">
+  <h4 class="card-header">Sign up</h4>
+  <div class="card-body">
+  <br>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email" %>
+    </div>
+    <br>
+    <div class="field">
+      <% if @minimum_password_length %>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "confirmation" %>
+     <div id="minimun"><%= @minimum_password_length %> characters minimum</div>
+    </div>
+    <div class="actions">
+    <br>
+    <%= f.submit "Sign up", class: "btn btn-success" %>
+    <br>
+    <br>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
