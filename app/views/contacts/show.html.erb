@@ -1,5 +1,6 @@
-<p style="color: green"><%= notice %></p>
-
+<% if notice %>
+  <p class="alert alert-warning" ><%= notice %></p>
+<% end %>
 
 <div class="jumbotron">
   <h3 class="display-4"><%= @contact.firt_name + ' ' + @contact.last_name %></h3>
