@@ -13,14 +13,15 @@
       <% end %>
       <%= f.password_field :password, autocomplete: "new-password", placeholder: "password" %>
       <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "confirmation" %>
-     <div id="minimun"><%= @minimum_password_length %> characters minimum</div>
+      <div id="minimun"><%= @minimum_password_length %> characters minimum</div>
     </div>
     <div class="actions">
-    <br>
-    <%= f.submit "Sign up", class: "btn btn-success" %>
-    <br>
-    <br>
-    </div>
+      <br>
+      <%= f.submit "Register", class: "btn btn-success" %>
+      <br>
+      <br>
+      </div>
+      <%= link_to "back" , root_path, class: "btn btn-secondary" %>
     <% end %>
   </div>
 </div>

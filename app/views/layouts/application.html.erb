@@ -19,14 +19,16 @@
   </head>
   <body>
 
-    <%= render 'home/header' %>
+    <% if user_signed_in? %> 
+      <%= render 'home/header' %>
+    <% end %>
+
     <div class="container">
     <br>
-    <% if notice %>
-      <%= render 'layouts/alerts' %>
-    <% end %>
-    
-    <%= yield %>
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
+      <%= yield %>
     </div>
     
   </body>
