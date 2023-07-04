@@ -10,8 +10,8 @@ In this application where different users can enter and each one will have their
 | ![Home](app/assets/images/index.png) | ![Index Admin](app/assets/images/log_in.png) |
 |:---:|:---:|
 | Home | Log in |
-| ![Home](app/assets/images/add_contact.png) | ![Index Admin](app/assets/images/contact_card.png) |
-
+| ![Add new](app/assets/images/add_contact.png) | ![Contact](app/assets/images/contact_card.png) |
+|:---:|:---:|
 | Add new | contact |
 
 ## Technology used
