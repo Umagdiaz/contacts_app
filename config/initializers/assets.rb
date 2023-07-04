@@ -2,6 +2,7 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = "1.0"
+Rails.applicacion.config.asset.precompile += %w( bootstrap.min.js popper.js)
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
 # Add additional assets to the asset load path.
