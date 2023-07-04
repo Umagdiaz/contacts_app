@@ -11,7 +11,7 @@ In this application where different users can enter and each one will have their
 |:---:|:---:|
 | Home | Log in |
 | ![Home](app/assets/images/add_contact.png) | ![Index Admin](app/assets/images/contact_card.png) |
-|:---:|:---:|
+
 | Add new | contact |
 
 ## Technology used
